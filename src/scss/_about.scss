@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+
+    .aboutUs {
+        .about_container {
+            width: auto;
+            height: auto;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 10px 30px;
+
+            .returnHomePage {
+                background-color: transparent;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+
+                i {
+                    font-size: 30px;
+                    margin-right: 10px;
+                    filter: invert(100%);
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+
+            .about_info {
+                background-color: transparent;
+                padding: 20px;
+                margin-bottom: 50px;
+
+                h1 {
+                    background: linear-gradient(75deg, #0098ff 0%, #7b35c8 100%);
+                    background-clip: text;
+                    color: transparent;
+                    font-size: 40px;
+                    font-weight: 800;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .about_text {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+
+        .title {
+            h2 {
+                color: gray;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+
+            article {
+                margin: 10px;
+                overflow: hidden;
+                height: 300px;
+            }
+        }
+    }
+
+    .information {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 40px;
+
+        h1 {
+            margin: 20px 0;
+            font-size: 40px;
+            color: gray;
+        }
+
+        .info_container {
+            display: flex;
+            margin-top: 30px;
+            width: 100%;
+            height: auto;
+            padding: 30px 0px;
+
+            .info_text {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                h2 {
+                    color: gray;
+                }
+
+                article {
+                    height: 300px;
+                    margin-right: 20px;
+                    padding: 30px 10px;
+                    color: gray;
+                    background-color: transparent;
+                    overflow: hidden;
+                }
+            }
+
+            .info_image {
+                width: 60%;
+                height: 400px;
+                background-color: transparent;
+
+                img {
+                    width: 95%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .our_services {
+        height: 500px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        .services_top {
+            width: 100%;
+            height: 200px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                font-size: 40px;
+                color: gray;
+                text-transform: capitalize;
+            }
+
+            article {
+                width: 70%;
+                text-align: center;
+                margin-top: 20px;
+                font-size: 16px;
+                color: gray;
+            }
+        }
+
+        .services_bottom {
+            height: auto;
+            background-color: transparent;
+            padding: 30px;
+
+            .bottom_cards {
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .card {
+                    width: 30%;
+                    height: 180px;
+                    border: 1px solid blue;
+                    padding: 20px;
+                    overflow: hidden;
+                    position: relative;
+
+                    h3 {
+                        margin-bottom: 10px;
+                        font-size: 30px;
+                        color: gray;
+                        font-weight: 800;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: gray;
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 30px;
+
+        .contact_container {
+            width: 100%;
+            height: auto;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 400px;
+            padding: 30px 0;
+
+            .contact_card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 20px 0;
+                width: 30%;
+                color: white;
+                height: 100%;
+
+                .card_info {
+
+                    h2 {
+                        margin: 20px 0;
+                        font-size: 30px;
+                        color: white;
+
+                        span {
+                            color: #7b35c8;
+                        }
+                    }
+
+                    p {
+                        color: white;
+                    }
+                }
+
+                article {
+                    color: white;
+                }
+            }
+
+            .navigation {
+                width: 25%;
+                height: 100%;
+                background-color: transparent;
+                padding: 30px;
+
+                h2 {
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    color: white;
+                }
+
+                .nav_list {
+                    list-style: none;
+                    padding: 20px 0;
+
+                    .nav_item {
+                        margin-bottom: 10px;
+                        font-size: 16px;
+
+                        &:hover {
+                            a {
+                                text-decoration: underline;
+                                color: gray;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
+
+            }
+
+            .about_us {
+                width: 20%;
+                height: 100%;
+                padding: 30px;
+                background-color: pink;
+            }
+
+            .share {
+                width: 20%;
+                padding: 30px;
+                height: 100%;
+                background-color: transparent;
+
+                h2 {
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    color: white;
+                }
+
+                .social_btns {
+                    margin-top: 20px;
+                    width: 100%;
+
+                    button {
+                        width: 20%;
+                        height: 30px;
+                        border-radius: 5px;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        margin-right: 5px;
+
+                        a {
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

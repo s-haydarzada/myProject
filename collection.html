@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="Header">
+        <div class="header_top">
+          <div class="header_top_left">
+            <ul class="nav_ul">
+              <li class="nav_item_li">
+                <a class="nav_item" href="#">Gaming Accessories</a>
+                <i class="fa-solid fa-chevron-down chevron"></i>
+                <div class="dropdown">
+                  <div>
+                    <ul>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>
+                        <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div class="nav_img">
+                      <img src="/src/images/navbar.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav_item_li">
+                <a class="nav_item" href="#">Pages</a>
+                <i class="fa-solid fa-chevron-down chevron"></i>
+                <div class="dropdown">
+                  <ul>
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a href="#">Shop</a>
+                    </li>
+                    <li>
+                      <a href="productDetails.html">Details</a>
+                    </li>
+                    <li>
+                      <a href="collection.html">Collections</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav_item_li">
+                <a class="nav_item" href="#">Blog</a>
+                <i class="fa-solid fa-chevron-down chevron"></i>
+                <div class="dropdown">
+                  <ul>
+                    <li>
+                      <a href="#">Home 3</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 3</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header_top_center">
+            <div>
+              <a href="https://gaming-workdo.myshopify.com/">
+                <img
+                  src="/src/images/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header_top_right">
+            <ul class="profile_info">
+              <li class="info_item">
+                <i class="fa-regular fa-user"></i>
+                <div class="dropdown">
+                  <ul>
+                    <li>
+                      <a href="#">Login</a>
+                    </li>
+                    <li>
+                      <a href="#">Create account</a>
+                    </li>
+                    <li>
+                      <a href="#">Wishlist(0)</a>
+                    </li>
+                    <li>
+                      <a href="#">Compare(0)</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="info_item">
+                <i class="fa-solid fa-globe"></i>
+              </li>
+              <li class="info_item">
+                <select class="select_currency" name="" id="">
+                  <option value="usd">USD</option>
+                </select>
+              </li>
+              <li class="info_item">
+                <div class="cart">
+                  MyCart:<span class="cart_span">0.00USD</span>
+                </div>
+                <div class="shopping_cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="count" id="cartCount">0</span>
+                </div>
+                <div class="hidden_cart">
+                    <h2 class="cart_title">
+                      Shopping Cart
+                    </h2>
+                    <div class="cart_content">
+                      <!-- <div class="cart_box">
+                        <img src="/src/images/b1.webp" alt="" class="img_cart">
+                        <div class="detail_box">
+                          <p class="cart_product_title">
+                            Seeds of Change Organic Quinoa, Brown, & Red Rice
+                          </p>
+                          <b class="cart_price">$25.04</b>
+                          <input type="number" value="1" class="cart_quantity">
+                        </div>
+                        <i class="fa-regular fa-trash-can cart_remove"></i>
+                      </div> -->
+                    </div>
+                    <div class="total">
+                      <div class="total_title">Total</div>
+                      <div class="total_price">$0</div>
+                    </div>
+                    <button type="button" class="buy_btn">
+                      <a href="#">Buy Now</a></button>
+                    <button type="button" class="checkout_btn">
+                      <a href="/checkout.html">Checkout</a>
+                    </button>
+                    <i class="fa-solid fa-xmark" id="cart_close"></i>
+                  </div>
+                </div>
+              
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <div class="header_bottom_left">
+            <a class="discount_info" href="#"
+              >New Accessories -30% Off. <span>More</span></a
+            >
+          </div>
+          <div class="search_input">
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="search" name="" id="" placeholder="Search Product..." />
+          </div>
+          <div class="new_collection">
+            <h4>
+              <a href="#"> New Collection</a>
+            </h4>
+          </div>
+        </div>
+      </header>
+    <main id="collection_main">
+        <section class="returnOtherPage">
+            <div class="container">
+                <div class="returnHomePage">
+                   <i class="fa-regular fa-circle-left"></i>
+                   <a href="index.html">Back to Home</a>
+                </div>
+                <div class="about_info">
+                    <h1>Bestseller <span>(6)</span></h1>
+                    <p>
+                        online gaming, electronic game playing over a computer network, particularly over the Internet. Electronic game worlds have generated billions of dollars, with millions of players around the world fighting, buying, crafting, and selling in a variety of online environments.
+                    </p>
+                  </div>
+            </div>
+          
+        </section>
+        <section class="filtered">
+            <div class="filtered_container">
+                <div class="filtered_left">
+                    <div class="filtered_params">
+                        <h3>Filter</h3>
+                        <div class="availability">
+                            <div class="item">
+                                <h4>availability</h4>
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="item">
+                                <div class="reset">
+                                    <span>0</span>
+                                    <p>selected</p>
+                                </div>
+                                <button>Reset</button>
+                            </div>
+                            <div class="item">
+                                <ul class="item_ul">
+                                    <li class="item_list">
+                                        <div class="stock">
+                                            <input type="checkbox" name="" id="stock-in">
+                                            <label for="">In stock</label> 
+                                        </div>
+                                       <span>(5)</span>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="stock">
+                                            <input type="checkbox" name="" id="stock-out">
+                                            <label for="">Out of stock</label> 
+                                        </div>
+                                       <span>(2)</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price_item">
+                                <h4>Price</h4>
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="price_item">
+                                <p>The highest price is 850.00USD</p>
+                                <button>Reset</button>
+                            </div>
+                            <div class="price_item">
+                                <div class="min_max_btn">
+                                    <span>Min price:</span>
+                                    <input type="text" placeholder="0" id="min-price">
+                                </div>
+                                <div class="min_max_btn">
+                                    <span>Max price:</span>
+                                    <input type="text" placeholder="850.00" id="max-price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checked_type">
+                            <div class="type">
+                                <h4>Product Type</h4>
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="checked_reset">
+                                <div class="selected">
+                                    <span>0</span>
+                                    <p>selected</p>
+                                </div>
+                                <button>Reset</button>
+                            </div>
+                            <div class="types">
+                                <ul class="types_ul">
+                                    <li class="types_list">
+                                        <div>
+                                            <input type="checkbox" name="" id="type-checkbox">
+                                            <label for="">Chair</label> 
+                                        </div>
+                                       <span>(0)</span>
+                                    </li>
+                                    <li class="types_list">
+                                        <div>
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Headphone</label> 
+                                        </div>
+                                       <span>(2)</span>
+                                    </li>
+                                    <li class="types_list">
+                                        <div>
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">HeadSet</label> 
+                                        </div>
+                                       <span>(2)</span>
+                                    </li>
+                                    <li class="types_list">
+                                        <div>
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Monitor</label> 
+                                        </div>
+                                       <span>(1)</span>
+                                    </li>
+                                    <li class="types_list">
+                                        <div>
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Remote</label> 
+                                        </div>
+                                       <span>(1)</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="checked_color">
+                            <div class="color_title">
+                                <h4>Color</h4>
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="color_reset">
+                                <div class="select">
+                                    <span>0</span>
+                                    <p>selected</p>
+                                </div>
+                                <button>Reset</button>
+                            </div>
+                            <div class="checked_color">
+                                <ul class="types_ul">
+                                    <li class="color-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                       <label for="">Black</label>
+                                    </li>
+                                    <li class="color-checkbox">
+                                       <input type="checkbox" name="" id="">
+                                       <label for="">White</label>
+                                    </li>
+                                    <li class="color-checkbox">
+                                       <input type="checkbox" name="" id="">
+                                       <label for="">Red</label>
+                                    </li>
+                                    <li class="color-checkbox">
+                                       <input type="checkbox" name="" id="">
+                                       <label for="">Gray</label>
+                                    </li>
+                                    <li class="color-checkbox">
+                                       <input type="checkbox" name="" id="">
+                                       <label for="">Blue</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="checked_size">
+                            <div class="size_title">
+                                <h4>Size</h4>
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="size_reset">
+                                <div class="select">
+                                    <span>0</span>
+                                    <p>selected</p>
+                                </div>
+                                <button>Reset</button>
+                            </div>
+                            <div class="size_models">
+                                <ul class="types_ul">
+                                    <li class="types_list">
+                                        <div>
+                                            <input type="checkbox" name="" id="size-checkbox">
+                                            <label for="">256GB</label> 
+                                        </div>
+                                       <span>(0)</span>
+                                    </li>
+                                    <li class="types_list">
+                                        <div>
+                                            <input type="checkbox" name="" id="size-checkbox">
+                                            <label for="">364GB</label> 
+                                        </div>
+                                       <span>(2)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtered_right">
+                    <div class="display_title">
+                        <div class="prev_page">
+                            <ul class="page_list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="collection.html" target="_blank">Bestseller</a></li>
+                            </ul>
+                        </div>
+                        <div class="sorted">
+                             <h4>Sort by:</h4>
+                        <select name="" id="">
+                            <option value="">Featured 1</option>
+                            <option value="">Featured 2</option>
+                            <option value="">Featured 3</option>
+                            <option value="">Featured 4</option>
+                            <option value="">Featured 5</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="show_product">
+                        <!-- <div class="product_cart swiper-slide">
+                            <h2 class="prod_title">Lorem ipsum dolor sit amet.</h2>
+                            <p>Type: Electrobot</p>
+                            <div class="product_cart_image">
+                              <img
+                                src="/src/images/about1.webp" class="prod_img"
+                                alt=""
+                              />
+                            </div>
+                            <div class="follow">
+                              <i class="fa-regular fa-heart follows"></i>
+                              <i class="fa-regular fa-eye follows"></i>
+                              <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="choose_color">
+                              <h4>Size:</h4>
+                              <select name="" id="">
+                                 <option value=""><span>364</span>GB</option>
+                                  <option value=""><span>256</span>GB</option>
+                              </select>
+                            </div>
+                            <div class="price_buy">
+                              <div class="prices">
+                                <b>356.00<span>USD</span></b>
+                                <s>500.00<span>USD</span></s>
+                              </div>
+                              <div class="add_cart_btn">
+                                <button class="add_btn">Add to Cart</button>
+                              </div>
+                            </div>
+                          </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./src/js/collection.js"></script>
+</body>
+</html>

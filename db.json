@@ -1,0 +1,231 @@
+{
+    "products" : [
+    {
+        "id": 0,
+        "img": "/src/images/gaming1.avif",
+        "title": "Cloud Alpha Gaming Headset",
+        "category":"gaming",
+        "brand":"Electrobot",
+        "price": 500.99,
+        "inStock": true,
+        "options": {
+            "size": ["364GB", "256GB"],
+            "color":["Gray","Blue"]
+        },
+        "sizePrices": {
+            "364": 867.99,
+            "256": 799.99
+        },
+        "oldPrice": 699.89
+    },
+    {
+        "id": 1,
+        "img": "/src/images/gaming2.avif",
+        "title": "VR Headset with Headphones",
+        "category":"gaming",
+        "price": 399.99,
+        "inStock": true,
+        "options": {
+            "size": ["364GB", "128GB"],
+            "color":["Red","White"]
+        },
+        "brand":"Electrobot",
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "oldPrice": 500.65
+    },
+    {
+        "id": 2,
+        "img": "/src/images/gaming5.avif",
+        "title": "Refurbished Xbox Series X 1TB Console",
+        "category":"gaming",
+        "inStock": false,
+        "options": {
+            "size": ["128GB", "256GB", "512GB"],
+            "color": ["Black", "White"]
+        },
+        "brand":"HyperX",
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 867.99,
+        "oldPrice": 999.99
+    },
+    {
+        "id": 3,
+        "img": "/src/images/klaviatura.avif",
+        "title": "Rubber Keycaps",
+        "category":"speakers",
+        "inStock": false,
+        "brand":"HyperX",
+        "options":{
+            "size":["512GB"],
+            "color": ["Blue", "White","Black"]
+        },
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 150.99,
+        "oldPrice": 300.89
+    },
+    {
+        "id": 4,
+        "img": "/src/images/speaker1.avif",
+        "title": "Cloud Alpha Gaming Headset",
+        "category":"speakers",
+        "inStock": true,
+        "brand":"HyperX",
+        "options":{
+            "size":["512GB","364GB","128GB"],
+            "color": ["Blue"]
+        },
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 345.77,
+        "oldPrice": 435.99
+    },
+    {
+        "id": 5,
+        "img": "/src/images/speaker12avif.avif",
+        "title": "Hyper Clutch Gaming Controller",
+        "category":"speakers",
+        "brand":" Samsung",
+        "options":{
+            "size":["512GB","256GB"],
+            "color": ["White","Black"]
+        },
+        "inStock": true,
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 426.99,
+        "oldPrice": 555.99
+
+    },
+    {
+        "id": 6,
+        "img": "/src/images/speaker3.avif",
+        "title": "Cloud Alpha Gaming Headset",
+        "category":"speakers",
+        "inStock": false,
+        "options":{
+            "size":["256GB","512GB","364GB"],
+            "color": ["Blue","Black"]
+        },
+        "brand":" Samsung",
+        "price": 654.78,
+        "oldPrice": 750.10
+    },
+    {
+        "id": 7,
+        "img": "/src/images/power1.avif",
+        "title": "Raptor Gameing Z95",
+        "category":"power",
+        "inStock": false,
+        "options":{
+            "size":["364GB"],
+            "color": ["Red", "White"]
+        },
+        "brand":" Samsung",
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 670.89,
+        "oldPrice": 789.99
+    },
+    {
+        "id": 8,
+        "img": "/src/images/power2.avif",
+        "title": "KD DMTR Gaming Desktop PC",
+        "category":"power",
+        "brand":" Sony PS5",
+        "options":{
+            "size":["512GB","256GB"],
+            "color": ["Blue","Black"]
+        },
+        "inStock": true,
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 735.77,
+        "oldPrice": 987.77
+    },
+    {
+        "id": 9,
+        "img": "/src/images/power3.avif",
+        "title": "Electrobot Xtreme Gaming Series PC",
+        "category":"power",
+        "brand":" Sony PS5",
+        "options":{
+            "size":["364GB","128GB"],
+            "color": ["White","Gray"]
+        },
+        "inStock": false,
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 222.39,
+        "oldPrice": 322.59
+    },
+    {
+        "id": 10,
+        "img": "/src/images/power3.avif",
+        "title": "Raptor Gameing Z95",
+        "category":"power",
+        "brand":" Sony PS5",
+        "options":{
+            "size":["364GB","256GB"],
+            "color": ["Red", "White","Gray"]
+        },
+        "inStock": true,
+        "price": 354.66,
+        "oldPrice": 453.88
+    },
+    {
+        "id": 11,
+        "img": "/src/images/power4.png",
+        "title": "KD DMTR Gaming Desktop PC",
+        "category":"power",
+        "inStock": true,
+        "brand":"Kepler Brooks",
+        "options":{
+            "size":["128GB","364GB"],
+            "color": ["Red","Gray"]
+        },
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 777.55,
+        "oldPrice": 879.99
+    },
+    {
+        "id": 12,
+        "img": "/src/images/power6.png",
+        "title": "Electrobot Xtreme Gaming Series PC",
+        "category":"power",
+        "inStock": true,
+        "brand":"Kepler Brooks",
+        "options":{
+            "size":["128GB","364GB"],
+            "color": ["Red", "Black"]
+        },
+        "sizePrices": {
+            "364": 667.99,
+            "256": 399.99
+        },
+        "price": 177.98,
+        "oldPrice": 250.99
+    }
+]
+}

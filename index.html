@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="icon" href="/src/images/286.gif" />
+    <title>My Project</title>
+  </head>
+  <body>
+    <header id="Header">
+      <div class="header_top">
+        <div class="header_top_left">
+          <ul class="nav_ul">
+            <li class="nav_item_li">
+              <a class="nav_item" href="#">Gaming Accessories</a>
+              <i class="fa-solid fa-chevron-down chevron"></i>
+              <div class="dropdown">
+                <div>
+                  <ul>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 2</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Home 1</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="nav_img">
+                    <img src="/src/images/navbar.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav_item_li">
+              <a class="nav_item" href="#">Pages</a>
+              <i class="fa-solid fa-chevron-down chevron"></i>
+              <div class="dropdown">
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Shop</a>
+                  </li>
+                  <li>
+                    <a href="productDetails.html">Details</a>
+                  </li>
+                  <li>
+                    <a href="collection.html">Collections</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav_item_li">
+              <a class="nav_item" href="#">Blog</a>
+              <i class="fa-solid fa-chevron-down chevron"></i>
+              <div class="dropdown">
+                <ul>
+                  <li>
+                    <a href="#">Home 3</a>
+                  </li>
+                  <li>
+                    <a href="#">Home 3</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="header_top_center">
+          <div>
+            <a href="https://gaming-workdo.myshopify.com/">
+              <img
+                src="/src/images/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div class="header_top_right">
+          <ul class="profile_info">
+            <li class="info_item">
+              <i class="fa-regular fa-user"></i>
+              <div class="dropdown">
+                <ul>
+                  <li>
+                    <a href="#">Login</a>
+                  </li>
+                  <li>
+                    <a href="#">Create account</a>
+                  </li>
+                  <li>
+                    <a href="#">Wishlist(0)</a>
+                  </li>
+                  <li>
+                    <a href="#">Compare(0)</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="info_item">
+              <i class="fa-solid fa-globe"></i>
+            </li>
+            <li class="info_item">
+              <select class="select_currency" name="" id="">
+                <option value="usd">USD</option>
+              </select>
+            </li>
+            <li class="info_item">
+              <div class="cart">
+                MyCart:<span class="cart_span">0.00USD</span>
+              </div>
+              <div class="shopping_cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="count" id="cartCount">0</span>
+              </div>
+              <div class="hidden_cart">
+                  <h2 class="cart_title">
+                    Shopping Cart
+                  </h2>
+                  <div class="cart_content">
+                    <!-- <div class="cart_box">
+                      <img src="/src/images/b1.webp" alt="" class="img_cart">
+                      <div class="detail_box">
+                        <p class="cart_product_title">
+                          Seeds of Change Organic Quinoa, Brown, & Red Rice
+                        </p>
+                        <b class="cart_price">$25.04</b>
+                        <input type="number" value="1" class="cart_quantity">
+                      </div>
+                      <i class="fa-regular fa-trash-can cart_remove"></i>
+                    </div> -->
+                  </div>
+                  <div class="total">
+                    <div class="total_title">Total</div>
+                    <div class="total_price">$0</div>
+                  </div>
+                  <button type="button" class="buy_btn">
+                    <a href="#">Buy Now</a></button>
+                  <button type="button" class="checkout_btn">
+                    <a href="/checkout.html">Checkout</a>
+                  </button>
+                  <i class="fa-solid fa-xmark" id="cart_close"></i>
+                </div>
+              </div>
+            
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="header_bottom_left">
+          <a class="discount_info" href="#"
+            >New Accessories -30% Off. <span>More</span></a
+          >
+        </div>
+        <div class="search_input">
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input type="search" name="" id="" placeholder="Search Product..." />
+        </div>
+        <div class="new_collection">
+          <h4>
+            <a href="#"> New Collection</a>
+          </h4>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="banner">
+        <div class="banner_content">
+          <div class="banner_content_top">
+            <span>Featured</span>
+            <p>
+              New featured collection
+              <a href="https://gaming-workdo.myshopify.com/">
+                \ Gaming. Collector</a
+              >
+            </p>
+          </div>
+          <div class="banner_content_center">
+            <h1>Best <span>Pro Gaming</span> Accessories</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              aperiam, cupiditate nihil architecto explicabo debitis iure illum
+              corrupti officia odio.
+            </p>
+          </div>
+          <div class="show_btns">
+            <button>Show Products</button>
+            <button>Show Collections</button>
+          </div>
+        </div>
+        <div class="banner_img">
+          <img src="/src/images/Half-bluthooth-right.webp" alt="" />
+        </div>
+      </section>
+      <section class="products swiper mySwiper">
+        <div class="products_title">
+          <h1>Bestseller of the week</h1>
+          <a href="collection.html"><button>Show Products</button></a>
+          
+        </div>
+        <div class="products_container swiper-wrapper">
+          <!-- <div class="swiper-slide">
+                  <div class="product_cart">
+                      <h2>Lorem ipsum dolor sit amet.</h2>
+                      <p>Type: Electrobot</p>
+                      <div class="product_cart_image">
+                          <img src="/src/images/1_892117ef-00bc-43f7-8789-c8a6a7c180ee_247x198.png" alt="">
+                      </div>
+                      <div class="follow">
+                          <i class="fa-regular fa-heart follows"></i>
+                          <i class="fa-regular fa-eye follows"></i>
+                          <i class="fa-solid fa-code-compare"></i>
+                      </div>
+                      <div class="choose_color">
+                          <h4>color:</h4>
+                          <select name="" id="">
+                              <option value="">White</option>
+                              <option value="">Black</option>
+                          </select>
+                      </div>
+                      <div class="price_buy">
+                          <div class="prices">
+                              <b>356.00<span>USD</span></b>
+                              <s>500.00<span>USD</span></s>
+                          </div>
+                          <div class="add_cart_btn">
+                              <button class="added_btn"></button>
+                          </div>
+                      </div>
+                  </div>
+              </div> -->
+                  <div class="time">
+                    <span class="day"></span>
+                    <span class="hour"></span>
+                    <span class="minute"></span>
+                    <span class="second"></span>
+                  </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <section class="slider">
+        <div class="slider_container">
+          <div class="slider_img">
+            <a href="#">
+              <img
+                src="/src/images/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="slider_img">
+            <a href="#">
+              <img
+                src="/src/images/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="slider_img">
+            <a href="#">
+              <img
+                src="/src/images/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="slider_img">
+            <a href="#">
+              <img
+                src="/src/images/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="slider_img">
+            <a href="#">
+              <img
+                src="/src/images/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="categories_container swiper2 mySwiper2">
+          <div class="categories_top">
+            <div class="left">
+              <h1>Best <br /><span>Pro Gaming</span><br />Categories</h1>
+              <div class="category_btns">
+                <button class="btns_item" data-category="gaming">
+                  <img src="/src/images/icons.png" alt="" />Gaming Peripherals
+                </button>
+                <button class="btns_item" data-category="power">
+                  <img src="/src/images/speakers.png" alt="" />Speakers &
+                  Headphones
+                </button>
+                <button class="btns_item" data-category="speakers">
+                  <img src="/src/images/power.png" alt="" />Power Supplies
+                </button>
+                <a href="#">Show More Categories</a>
+              </div>
+            </div>
+            <div class="right">
+              <div class="right_container swiper-wrapper">
+                <!-- <div class="product_cart swiper-slide">
+                    <h2 class="prod_title">Lorem ipsum dolor sit amet.</h2>
+                    <p>Type: Electrobot</p>
+                    <div class="product_cart_image">
+                      <img
+                        src="/src/images/1_892117ef-00bc-43f7-8789-c8a6a7c180ee_247x198.png" class="prod_img"
+                        alt=""
+                      />
+                    </div>
+                    <div class="follow">
+                      <i class="fa-regular fa-heart follows"></i>
+                      <i class="fa-regular fa-eye follows"></i>
+                      <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <div class="choose_color">
+                      <h4>Size:</h4>
+                      <select name="" id="">
+                         <option value=""><span>364</span>GB</option>
+                          <option value=""><span>256</span>GB</option>
+                      </select>
+                    </div>
+                    <div class="price_buy">
+                      <div class="prices">
+                        <b>356.00<span>USD</span></b>
+                        <s>500.00<span>USD</span></s>
+                      </div>
+                      <div class="add_cart_btn">
+                        <button class="add_btn">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>-->
+                <div class="swiper-button-next mynext"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+          <div class="categories_bottom">
+            <div class="container">
+              <div class="container_left">
+                <h3>Subscribe us</h3>
+                <h1>Subscribe newsletter and <span>get-20% off</span></h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Fugiat, esse.
+                </p>
+                <form class="search">
+                  <input
+                    type="search"
+                    name=""
+                    id=""
+                    placeholder="Enter email adress..."
+                  />
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+              <div class="container_right">
+                <div>
+                  <img src="./src/images/subscribe-img.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Cpu_info">
+        <div class="container">
+          <div class="container_top">
+            <h1>Best Pro gaming products</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur expedita deserunt vitae quam perferendis impedit
+              dolore tempora, reiciendis ipsam autem.
+            </p>
+            <a href="">
+              <button>
+                show products<img src="./src/images/icons.png" alt="" />
+              </button>
+            </a>
+          </div>
+          <div class="container_bottom">
+            <div class="container_bottom_inner">
+              <div class="image">
+                <img src="/src/images/product-cpu1.webp" alt="" />
+              </div>
+              <div class="cpu_center_card">
+                <div class="product_cart">
+                  <h2>kd dmtr...</h2>
+                  <p>
+                    Multiple connectivity options including HDMI, USB ports &
+                    RGB fans let you connect a variety of peripherals easily.
+                    Wi-Fi Ready – Connect to the internet wirelessly with ease.
+                    Preloaded with Windows 10 64-bit OS for enhanced
+                    productivity and multitasking.
+                  </p>
+                  <div class="choose_color">
+                    <h4>Size:</h4>
+                    <select name="" id="">
+                      <option value=""><span>364</span>GB</option>
+                      <option value=""><span>256</span>GB</option>
+                    </select>
+                  </div>
+                  <div class="price_buy">
+                    <div class="prices">
+                      <b>356.00<span>USD</span></b>
+                    </div>
+                    <div class="add_cart_btn">
+                      <button class="add_btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="image">
+                <img src="./src/images/double.cpu2.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shopify">
+        <div class="shopify_container">
+          <div class="shopify_top">
+            <div class="shopify_image_left">
+              <img src="./src//images/headphones double.webp" alt="" />
+            </div>
+            <div class="shopify_card_container">
+              <div class="shopify_card">
+                <h1>Cloud alpha...</h1>
+                <article>
+                  HyperX Dual Chamber Drivers for more distinction and less
+                  distortion. Signature Award-Winning HyperX comfort. Durable
+                  aluminum frame with an expanded headband. Detachable braided
+                  cable with convenient in-line audio control. Detachable noise
+                  cancellation microphone.
+                </article>
+                <div class="choose_color">
+                  <h4>Color:</h4>
+                  <select name="" id="">
+                    <option value="white">White</option>
+                    <option value="black">black</option>
+                  </select>
+                </div>
+                <div class="prices">
+                  <div class="all_prices">
+                    <b>530.90 <span>USD</span></b>
+                    <s>600.90 <span>USD</span></s>
+                  </div>
+                  <div class="add_card">
+                    <button class="add_btn">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shopify_image_right">
+              <img src="./src/images/Half-bluthooth-right.webp" alt="" />
+            </div>
+          </div>
+          <div class="shopify_bottom">
+            <div class="shopify_title">
+              <h2>about our shop</h2>
+              <p>
+                Gaming can help to improve cognitive skills such as
+                problem-solving, memory, and attention.
+              </p>
+            </div>
+            <div class="shopify_sub_cards">
+              <div class="cards">
+                <b>01</b>
+                <h3>gift boxes</h3>
+                <p>Finished products products and gift wrapping</p>
+              </div>
+              <div class="cards">
+                <b>02</b>
+                <h3>promotions</h3>
+                <p>Large promotions with numerous discounts</p>
+              </div>
+              <div class="cards">
+                <b>03</b>
+                <h3>Shipping</h3>
+                <p>Free shipping on any order from $ 150</p>
+              </div>
+              <div class="cards">
+                <b>04</b>
+                <h3>Quality</h3>
+                <p>All products are made by engineers from India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="blog_container">
+          <div class="blog_top">
+            <h1>Best <span>Pro gaming</span> products</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur expedita deserunt vitae quam perferendis impedit
+              dolore tempora, reiciendis ipsam autem.
+            </p>
+            <a href="">
+            <button>
+              show products<img src="./src/images/icons.png" alt="" />
+            </button>
+          </a>
+          </div>
+          <div class="blog_bottom">
+            <div class="blog_card">
+              <div class="blog_card_info">
+                <div class="blog_image">
+                  <img src="./src/images/b1.webp" alt="" />
+                </div>
+                <div class="blog_date">
+                  <h3>news</h3>
+                  <p>December 13,2022</p>
+                </div>
+              </div>
+              <div class="blog_card_content">
+                <h2>The dev Diary...</h2>
+                <p>Author:Workdo</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="blog_card">
+              <div class="blog_card_info">
+                <div class="blog_image">
+                  <img src="./src/images/b1.webp" alt="" />
+                </div>
+                <div class="blog_date">
+                  <h3>news</h3>
+                  <p>December 13,2022</p>
+                </div>
+              </div>
+              <div class="blog_card_content">
+                <h2>The dev Diary...</h2>
+                <p>Author:Workdo</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="blog_card">
+              <div class="blog_card_info">
+                <div class="blog_image">
+                  <img src="./src/images/b1.webp" alt="" />
+                </div>
+                <div class="blog_date">
+                  <h3>news</h3>
+                  <p>December 13,2022</p>
+                </div>
+              </div>
+              <div class="blog_card_content">
+                <h2>The dev Diary...</h2>
+                <p>Author:Workdo</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="blog_card">
+              <div class="blog_card_info">
+                <div class="blog_image">
+                  <img src="./src/images/b1.webp" alt="" />
+                </div>
+                <div class="blog_date">
+                  <h3>news</h3>
+                  <p>December 13,2022</p>
+                </div>
+              </div>
+              <div class="blog_card_content">
+                <h2>The dev Diary...</h2>
+                <p>Author:Workdo</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <!-- <div class="blog_card">
+              <div class="blog_card_info">
+               <div class="blog_image">
+                <img src="./src/images/b1.webp" alt="">
+              </div>
+              <div class="blog_date">
+                <h3>news</h3>
+                <p>December 13,2022</p>
+              </div> 
+              </div>
+             <div class="blog_card_content">
+              <h2>The dev Diary...</h2>
+              <p>Author:Workdo</p>
+              <a href="#">Read More</a>
+             </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="game_products">
+        <div class="game_products_container myswiper mySwiper">
+          <div class="game_products_top">
+            <div class="products_title">
+              <h2>Best Pro Gaming Products</h2>
+            </div>
+            <div class="products_text">
+              <p>
+                With hardware, tools are what enable a person to install,
+                remove, or perform other actions on the components within their
+                computer.
+              </p>
+            </div>
+            <div class="products_btn">
+              <button>
+                Show Products <img src="./src/images/icons.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="game_products_bottom swiper-wrapper">
+            <!-- <div class="game_product_cart swiper-slide">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>Type:Electrobot</p>
+              <div class="game_cart_image">
+                <img src="./src/images/gaming1.avif" alt="" />
+              </div>
+              <div class="follow">
+                <i class="fa-regular fa-heart follows"></i>
+                <i class="fa-regular fa-eye follows"></i>
+                <i class="fa-solid fa-code-compare"></i>
+              </div>
+              <div class="choose_color">
+                <h4>color:</h4>
+                <select name="" id="sizeSelect">
+                  <option value="white">White</option>
+                  <option value="black">Black</option>
+                </select>
+              </div>
+              <div class="price_buy">
+                <div class="prices">
+                  <b class="product_price">300.99<span>USD</span></b>
+                  <s>400.99<span>USD</span></s>
+                </div>
+                <div class="add_cart_btn">
+                  <button class="add_btn">Add to Cart</button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testimonilas_container swipers mySwipers">
+          <div class="container_top">
+            <h1>Testimonials</h1>
+            <p>A video game console is an electronic device that outputs a video signal or image to display a video game that can be played with a game controller.</p>
+          </div>
+          <div class="container_bottom swiper-wrapper">
+            <div class="testimonials_card swiper-slide">
+              <div class="image">
+                <img src="/src/images/testi-1.webp" alt="">
+              </div>
+              <div class="card_content">
+                <h3>One Level Time!</h3>
+                <p>I also love the challenge of trying to beat a difficult game or master a new skill. Gaming has taught me a lot about perseverance and determination, and it's helped me to develop my problem-solving skills.</p>
+                <div class="rating">
+                  <div class="profile">
+                    <img src="./src/images/client-img.webp" alt="">
+                    <div class="profile_info">
+                      <h5>Alex Thompson,</h5>
+                      <span>client</span>
+                    </div>
+                  </div>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span>4.5/5.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials_card swiper-slide">
+              <div class="image">
+                <img src="/src/images/testi-2.webp" alt="">
+              </div>
+              <div class="card_content">
+                <h3>One Level Time!</h3>
+                <p>I also love the challenge of trying to beat a difficult game or master a new skill. Gaming has taught me a lot about perseverance and determination, and it's helped me to develop my problem-solving skills.</p>
+                <div class="rating">
+                  <div class="profile">
+                    <img src="./src/images/client-img.webp" alt="">
+                    <div class="profile_info">
+                      <h5>Alex Thompson,</h5>
+                      <span>client</span>
+                    </div>
+                  </div>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span>4.5/5.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials_card swiper-slide">
+              <div class="image">
+                <img src="/src/images/testi-2.webp" alt="">
+              </div>
+              <div class="card_content">
+                <h3>One Level Time!</h3>
+                <p>I also love the challenge of trying to beat a difficult game or master a new skill. Gaming has taught me a lot about perseverance and determination, and it's helped me to develop my problem-solving skills.</p>
+                <div class="rating">
+                  <div class="profile">
+                    <img src="./src/images/client-img.webp" alt="">
+                    <div class="profile_info">
+                      <h5>Alex Thompson,</h5>
+                      <span>client</span>
+                    </div>
+                  </div>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span>4.5/5.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact_container">
+          <div class="contact_card">
+            <div class="card_info">
+              <img
+                src="./src/images/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                alt=""
+              />
+              <h2>Reach out & let your <span>mind explore</span></h2>
+              <p>
+                I also love the challenge of trying to beat a difficult game or
+                master a new skill.
+              </p>
+            </div>
+            <article>© 2023, Gaming WorkDo, Powered by Shopify</article>
+          </div>
+          <div class="navigation">
+            <h2>Navigation:</h2>
+            <ul class="nav_list">
+              <li class="nav_item"><a href="#">Search</a></li>
+              <li class="nav_item"><a href="#">All collections</a></li>
+              <li class="nav_item"><a href="#">All products</a></li>
+              <li class="nav_item"><a href="#">Article page</a></li>
+              <li class="nav_item"><a href="#">Blog page</a></li>
+            </ul>
+          </div>
+          <div class="navigation">
+            <h2>About us:</h2>
+            <ul class="nav_list">
+              <li class="nav_item"><a href="#">About us</a></li>
+              <li class="nav_item"><a href="#">Contact with us</a></li>
+              <li class="nav_item"><a href="#">FAQ's</a></li>
+              <li class="nav_item"><a href="#">Privacy Policy</a></li>
+              <li class="nav_item"><a href="#">Shipping & Delivery</a></li>
+              <li class="nav_item"><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="share">
+            <h2>share:</h2>
+            <div class="social_btns">
+              <button>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </button>
+              <button>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              </button>
+              <button>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              </button>
+              <button>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/src/js/app.js"></script>
+  </body>
+</html>
