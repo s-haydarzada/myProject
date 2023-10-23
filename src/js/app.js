@@ -40,9 +40,9 @@ window.addEventListener("DOMContentLoaded", function () {
             data.products.forEach((item) => {
 
                 const html = `
-                    <div class="product_cart swiper-slide" id="prod">
+                    <div class="product_cart swiper-slide" id="prod" data-id="${item.id}">
                     <h2 class="prod_title">${item.title}</h2>
-                    <p>Type:Electrobot</p>
+                    <p>Type:${item.brand}</p>
                     <div class="product_cart_image">
                         <img src="${item.img}" alt="" class="prod_img">
                     </div>
@@ -74,8 +74,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
                 productContainer.innerHTML += html;
 
-
-
+              
                 if (document.readyState === "loading") {
                     document.addEventListener("DOMContentLoaded", start)
                 } else {
@@ -274,11 +273,12 @@ window.addEventListener("DOMContentLoaded", function () {
             }
 
             const modalIcons = document.querySelectorAll("#modal_icon");
-            const prodCarts = document.querySelectorAll("#prod");
+            const prodCarts = document.querySelectorAll(".product_cart");
             
             prodCarts.forEach((item)=>{
                 item.addEventListener("click",function(){
-                   
+                    const productId = this.dataset.id;
+                    window.location.href = `productDetails.html?id=${productId}`;
                 })
             })
             

@@ -2481,10 +2481,14 @@ body {
   height: 100%;
   background-color: transparent;
   padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #main .productDetails .productDetails_container .prod_detail .detail_right .detail_image {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 90%;
+  border: 1px solid blue;
 }
 #main .productDetails .productDetails_container .prod_detail .detail_right .detail_image img {
   width: 100%;
