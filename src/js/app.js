@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", function () {
             data.products.forEach((item) => {
 
                 const html = `
-                    <div class="product_cart swiper-slide">
+                    <div class="product_cart swiper-slide" id="prod">
                     <h2 class="prod_title">${item.title}</h2>
                     <p>Type:Electrobot</p>
                     <div class="product_cart_image">
@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="follow">
                     <i class="fa-regular fa-heart follows"></i>
-                    <i class="fa-regular fa-eye follows"></i>
+                    <i class="fa-regular fa-eye follows" id="modal_icon"></i>
                     <i class="fa-solid fa-code-compare"></i>
                 </div>
                     <div class="choose_color">
@@ -73,6 +73,8 @@ window.addEventListener("DOMContentLoaded", function () {
                 </div>               `
 
                 productContainer.innerHTML += html;
+
+
 
                 if (document.readyState === "loading") {
                     document.addEventListener("DOMContentLoaded", start)
@@ -243,24 +245,50 @@ window.addEventListener("DOMContentLoaded", function () {
                     }
                 }, 1000);
 
+                var myswiper = new Swiper(".mySwiper", {
+                    watchSlidesProgress: true,
+                    slidesPerView: 5,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                });
+
             })
 
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
 
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 4,
-                spaceBetween: 30,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == document.getElementById("myModal")) {
+                    closeModal();
+                }
+            }
+
+            const modalIcons = document.querySelectorAll("#modal_icon");
+            const prodCarts = document.querySelectorAll("#prod");
+            
+            prodCarts.forEach((item)=>{
+                item.addEventListener("click",function(){
+                   
+                })
+            })
+            
+            modalIcons.forEach(product => {
+                product.addEventListener("click", function () {
+                    console.log("Salam")
+                });
             });
 
-            var myswiper = new Swiper(".mySwiper", {
-                watchSlidesProgress: true,
-                slidesPerView: 5,
-            });
         })
-
     // 3.Filter in categories section
 
     fetch("db.json")
@@ -302,6 +330,17 @@ window.addEventListener("DOMContentLoaded", function () {
     </div>`
 
                 rightContainer.innerHTML += category;
+                // var swiper = new Swiper(".mySwiper", {
+                //     slidesPerView: 3,
+                //     spaceBetween: 30,
+                //     keyboard: {
+                //       enabled: true,
+                //     },
+                //     navigation: {
+                //       nextEl: ".swiper-button-next",
+                //       prevEl: ".swiper-button-prev",
+                //     },
+                //   });
 
                 if (document.readyState === "loading") {
                     document.addEventListener("DOMContentLoaded", start)
@@ -429,25 +468,20 @@ window.addEventListener("DOMContentLoaded", function () {
                     totalElement.innerHTML = "$" + total;
                 }
 
-
-
                 function CartBoxComponent(title, price, imgSrc) {
                     return `
-        <div class="cart_box">
-        <img src=${imgSrc} alt="" class="img_cart">
-        <div class="detail_box">
-          <p class="cart_product_title">${title}</p>
-          <b class="cart_price">${price}</b>
-          <input type="number" value="1" class="cart_quantity">
-        </div>
-        <i class="fa-regular fa-trash-can cart_remove"></i>
-      </div>
-        `
+                    <div class="cart_box">
+                    <img src=${imgSrc} alt="" class="img_cart">
+                    <div class="detail_box">
+                      <p class="cart_product_title">${title}</p>
+                      <b class="cart_price">${price}</b>
+                      <input type="number" value="1" class="cart_quantity">
+                    </div>
+                    <i class="fa-regular fa-trash-can cart_remove"></i>
+                  </div>
+                    `
                 }
-
-
             })
-
 
             function filterProductsByCategory(category) {
                 return data.products.filter(product => product.category === category);
@@ -470,61 +504,48 @@ window.addEventListener("DOMContentLoaded", function () {
 
                 function displayFilteredProducts(filteredProducts) {
                     rightContainer.innerHTML = "";
+
+
                     filteredProducts.forEach(product => {
                         rightContainer.innerHTML += `
-              <div class="product_cart swiper-slide">
-              <h2>${product.title}</h2>
-              <p>Type:Electrobot</p>
-              <div class="product_cart_image">
-                  <img src="${product.img}" alt="">
-              </div>
-              <div class="follow">
-              <i class="fa-regular fa-heart follows"></i>
-              <i class="fa-regular fa-eye follows"></i>
-              <i class="fa-solid fa-code-compare"></i>
-          </div>
-              <div class="choose_color">
-                  <h4>Size:</h4>
-                  <select name="" id="">
-                      <option value=""><span>364</span>GB</option>
-                      <option value=""><span>256</span>GB</option>
-                  </select>
-              </div>
-              <div class="price_buy">
-                  <div class="prices">
-                      <b>${product.price}<span>USD</span></b>
-                      <s>${product.oldPrice}<span>USD</span></s>
-                  </div>
-                  <div class="add_cart_btn">
-                  ${product.inStock ?
+                            <div class="product_cart swiper-slide">
+                                <h2>${product.title}</h2>
+                                <p>Type:Electrobot</p>
+                                <div class="product_cart_image">
+                                <img src="${product.img}" alt="">
+                            </div>
+                            <div class="follow">
+                                <i class="fa-regular fa-heart follows"></i>
+                                <i class="fa-regular fa-eye follows"></i>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="choose_color">
+                                <h4>Size:</h4>
+                                <select name="" id="">
+                                    <option value=""><span>364</span>GB</option>
+                                    <option value=""><span>256</span>GB</option>
+                                </select>
+                            </div>
+                            <div class="price_buy">
+                                <div class="prices">
+                                    <b>${product.price}<span>USD</span></b>
+                                    <s>${product.oldPrice}<span>USD</span></s>
+                                </div>
+                                <div class="add_cart_btn">
+                                    ${product.inStock ?
                                 `<button class="add_btn">Add to Cart</button>` :
                                 `<button class="add_btn desable" desabled>Out of Stock</button>`
                             }
-                  </div>
-              </div>
-          </div>`
-                            ;
+                                </div>
+                                 </div>
+                            </div>`;
+
                     });
+
                 }
             })
+
+
+
         })
-
-
-    // 4.size filter
-
-    // const sizeSelect = document.querySelector("#sizeSelect");
-    // const productPrice = document.querySelector("#prices");
-    // fetch("db.json")
-    // .then(res=>res.json())
-    // .then(data=>{
-    // let selectedProduct = data.products.forEach((item)=>{
-    //     var sizePrices = item.sizePrices;
-    //     if(sizePrices.key==sizeSelect)
-    //     return sizePrices.value;
-    // })
-
-    // })
-
-
-
 })

@@ -260,7 +260,7 @@
           <img src="/src/images/Half-bluthooth-right.webp" alt="" />
         </div>
       </section>
-      <section class="products swiper mySwiper">
+      <section class="products myswiper mySwiper">
         <div class="products_title">
           <h1>Bestseller of the week</h1>
           <a href="collection.html"><button>Show Products</button></a>
@@ -268,7 +268,8 @@
         </div>
         <div class="products_container swiper-wrapper">
           <!-- <div class="swiper-slide">
-                  <div class="product_cart">
+                  <div class="product_cart" id="prod">
+                    <a href="">
                       <h2>Lorem ipsum dolor sit amet.</h2>
                       <p>Type: Electrobot</p>
                       <div class="product_cart_image">
@@ -276,7 +277,13 @@
                       </div>
                       <div class="follow">
                           <i class="fa-regular fa-heart follows"></i>
-                          <i class="fa-regular fa-eye follows"></i>
+                          <i class="fa-regular fa-eye follows" id="modal_icon"></i>
+                          <div id="myModal" class="modal">
+                            <div class="modal-content">
+                              İşte modal pencerenin içeriği. Ürün detayları vb.
+                              <span onclick="closeModal()">&times;</span>
+                            </div>
+                          </div>                        
                           <i class="fa-solid fa-code-compare"></i>
                       </div>
                       <div class="choose_color">
@@ -304,6 +311,8 @@
                     <span class="second"></span>
                   </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </section>
       <section class="slider">
@@ -351,7 +360,7 @@
         </div>
       </section>
       <section class="categories">
-        <div class="categories_container swiper2 mySwiper2">
+        <div class="categories_container">
           <div class="categories_top">
             <div class="left">
               <h1>Best <br /><span>Pro Gaming</span><br />Categories</h1>
@@ -370,7 +379,7 @@
               </div>
             </div>
             <div class="right">
-              <div class="right_container swiper-wrapper">
+              <div class="right_container">
                 <!-- <div class="product_cart swiper-slide">
                     <h2 class="prod_title">Lorem ipsum dolor sit amet.</h2>
                     <p>Type: Electrobot</p>
@@ -402,9 +411,9 @@
                       </div>
                     </div>
                   </div>-->
-                <div class="swiper-button-next mynext"></div>
-                <div class="swiper-button-prev"></div>
+                
               </div>
+              
             </div>
           </div>
           <div class="categories_bottom">
@@ -434,6 +443,8 @@
             </div>
           </div>
         </div>
+        <!-- <div class="swiper-button-next mynext"></div>
+        <div class="swiper-button-prev"></div> -->
       </section>
       <section class="Cpu_info">
         <div class="container">

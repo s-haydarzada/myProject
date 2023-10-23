@@ -9,7 +9,7 @@
         "price": 500.99,
         "inStock": true,
         "options": {
-            "size": ["364GB", "256GB"],
+            "size": ["256GB","364GB" ],
             "color":["Gray","Blue"]
         },
         "sizePrices": {
@@ -26,7 +26,7 @@
         "price": 399.99,
         "inStock": true,
         "options": {
-            "size": ["364GB", "128GB"],
+            "size": ["128GB","364GB" ],
             "color":["Red","White"]
         },
         "brand":"Electrobot",
@@ -80,7 +80,7 @@
         "inStock": true,
         "brand":"HyperX",
         "options":{
-            "size":["512GB","364GB","128GB"],
+            "size":["128GB","364GB","512GB"],
             "color": ["Blue"]
         },
         "sizePrices": {
@@ -95,12 +95,12 @@
         "img": "/src/images/speaker12avif.avif",
         "title": "Hyper Clutch Gaming Controller",
         "category":"speakers",
-        "brand":" Samsung",
         "options":{
             "size":["512GB","256GB"],
             "color": ["White","Black"]
         },
         "inStock": true,
+        "brand":" Samsung",
         "sizePrices": {
             "364": 667.99,
             "256": 399.99
@@ -116,7 +116,7 @@
         "category":"speakers",
         "inStock": false,
         "options":{
-            "size":["256GB","512GB","364GB"],
+            "size":["256GB","364GB","512GB"],
             "color": ["Blue","Black"]
         },
         "brand":" Samsung",
@@ -148,7 +148,7 @@
         "category":"power",
         "brand":" Sony PS5",
         "options":{
-            "size":["512GB","256GB"],
+            "size":["256GB","512GB"],
             "color": ["Blue","Black"]
         },
         "inStock": true,
@@ -166,7 +166,7 @@
         "category":"power",
         "brand":" Sony PS5",
         "options":{
-            "size":["364GB","128GB"],
+            "size":["128GB","364GB"],
             "color": ["White","Gray"]
         },
         "inStock": false,
@@ -184,7 +184,7 @@
         "category":"power",
         "brand":" Sony PS5",
         "options":{
-            "size":["364GB","256GB"],
+            "size":["256GB","364GB"],
             "color": ["Red", "White","Gray"]
         },
         "inStock": true,

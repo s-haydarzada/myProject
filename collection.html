@@ -96,7 +96,7 @@
                 <div class="dropdown">
                   <ul>
                     <li>
-                      <a href="#">Home</a>
+                      <a href="index.html">Home</a>
                     </li>
                     <li>
                       <a href="about.html">About</a>
@@ -295,14 +295,67 @@
                             <div class="price_item">
                                 <div class="min_max_btn">
                                     <span>Min price:</span>
-                                    <input type="text" placeholder="0" id="min-price">
+                                    <input type="number" placeholder="0" id="min-price">
                                 </div>
                                 <div class="min_max_btn">
                                     <span>Max price:</span>
-                                    <input type="text" placeholder="850.00" id="max-price">
+                                    <input type="number" placeholder="850.00" id="max-price">
                                 </div>
                             </div>
                         </div>
+                        <div class="brand">
+                          <div class="brand_title">
+                              <h4>Brand</h4>
+                              <i class="fa-solid fa-minus"></i>
+                          </div>
+                          <div class="brand_reset">
+                              <div class="select">
+                                  <span>0</span>
+                                  <p>selected</p>
+                              </div>
+                              <button>Reset</button>
+                          </div>
+                          <div class="checked_model">
+                              <ul class="types_ul">
+                                  <li class="types_list brand-checkbox">
+                                      <div>
+                                        <input type="checkbox" name="brand" value="Electrobot" id="brand-electrobot">
+                                        <label for="brand-electrobot">Electrobot</label>
+                                      </div>
+                                     <span id="brand-electrobot-count">(0)</span>
+                                  </li>
+                                  <li class="types_list brand-checkbox">
+                                      <div>
+                                        <input type="checkbox" name="brand" value="HyperX" id="brand-hyperx">
+                                        <label for="brand-hyperx">HyperX</label> 
+                                      </div>
+                                     <span id="brand-hyperx-count">(2)</span>
+                                  </li>
+                                  <li class="types_list brand-checkbox">
+                                      <div>
+                                          <input type="checkbox" name="brand" value="Kepler Brooks" id="brand-kepler-Brooks">
+                                          <label for="brand-kepler-Brooks">Kepler Brooks</label> 
+                                      </div>
+                                     <span id="brand-kepler-count">(2)</span>
+                                  </li>
+                                  <li class="types_list brand-checkbox">
+                                    <div>
+                                      <input type="checkbox" name="brand" value="Samsung" id="brand-samsung">
+                                      <label for="brand-samsung">Samsung</label>
+                                  </div>
+                                     <span id="brand-samsung-count">(1)</span>
+                                  </li>
+                                  <li class="types_list brand-checkbox">
+                                    <div>
+                                      <input type="checkbox" name="brand" value="Sony PS5" id="brand-sony-ps5">
+                                      <label for="brand-sony-ps5">Sony PS5</label>
+                                  </div>
+                                     <span id="brand-sony-count">(1)</span>
+                                  </li>
+                                  
+                              </ul>
+                          </div>
+                      </div>
                         <div class="checked_type">
                             <div class="type">
                                 <h4>Product Type</h4>
@@ -317,13 +370,6 @@
                             </div>
                             <div class="types">
                                 <ul class="types_ul">
-                                    <li class="types_list">
-                                        <div>
-                                            <input type="checkbox" name="" id="type-checkbox">
-                                            <label for="">Chair</label> 
-                                        </div>
-                                       <span>(0)</span>
-                                    </li>
                                     <li class="types_list">
                                         <div>
                                             <input type="checkbox" name="" id="">
@@ -371,24 +417,24 @@
                             <div class="checked_color">
                                 <ul class="types_ul">
                                     <li class="color-checkbox">
-                                        <input type="checkbox" name="" id="">
-                                       <label for="">Black</label>
+                                        <input type="checkbox" name="color" value="Black" id="black">
+                                       <label for="black">Black</label>
                                     </li>
                                     <li class="color-checkbox">
-                                       <input type="checkbox" name="" id="">
-                                       <label for="">White</label>
+                                       <input type="checkbox" name="color" value="White" id="white">
+                                       <label for="white">White</label>
                                     </li>
                                     <li class="color-checkbox">
-                                       <input type="checkbox" name="" id="">
-                                       <label for="">Red</label>
+                                       <input type="checkbox" name="color" value="Red" id="red">
+                                       <label for="red">Red</label>
                                     </li>
                                     <li class="color-checkbox">
-                                       <input type="checkbox" name="" id="">
-                                       <label for="">Gray</label>
+                                       <input type="checkbox" name="color" value="Gray" id="gray">
+                                       <label for="gray">Gray</label>
                                     </li>
                                     <li class="color-checkbox">
-                                       <input type="checkbox" name="" id="">
-                                       <label for="">Blue</label>
+                                       <input type="checkbox" name="color" value="Blue" id="blue">
+                                       <label for="blue">Blue</label>
                                     </li>
                                 </ul>
                             </div>
@@ -407,17 +453,31 @@
                             </div>
                             <div class="size_models">
                                 <ul class="types_ul">
-                                    <li class="types_list">
+                                    <li class="types_list size-checkbox">
                                         <div>
-                                            <input type="checkbox" name="" id="size-checkbox">
-                                            <label for="">256GB</label> 
+                                            <input type="checkbox" name="size" value="256GB" id="size-256GB">
+                                            <label for="size-256GB">256GB</label> 
                                         </div>
                                        <span>(0)</span>
                                     </li>
-                                    <li class="types_list">
+                                    <li class="types_list size-checkbox">
                                         <div>
-                                            <input type="checkbox" name="" id="size-checkbox">
-                                            <label for="">364GB</label> 
+                                            <input type="checkbox" name="size" value="364GB" id="size-364GB">
+                                            <label for="size-364GB">364GB</label> 
+                                        </div>
+                                       <span>(2)</span>
+                                    </li>
+                                    <li class="types_list size-checkbox">
+                                        <div>
+                                            <input type="checkbox" name="size" value="512GB" id="size-512GB">
+                                            <label for="size-512GB">512GB</label> 
+                                        </div>
+                                       <span>(2)</span>
+                                    </li>
+                                    <li class="types_list size-checkbox">
+                                        <div>
+                                            <input type="checkbox" name="size" value="128GB" id="size-128GB">
+                                            <label for="size-128GB">128Gb</label> 
                                         </div>
                                        <span>(2)</span>
                                     </li>
