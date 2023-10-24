@@ -1,38 +1,3 @@
-// window.addEventListener("DOMContentLoaded",function(){
-
-//     var header = document.querySelector(".header_top");
-//     var initialOffset = header.offsetTop;
-//     window.addEventListener("scroll", function () {
-//         if (window.pageYOffset > initialOffset + 30) {
-//           header.style.position = "fixed";
-//           header.style.top = "0";
-//           header.style.width="100%";
-//           header.style.zIndex="100"
-//         } else {
-//           header.style.position = "relative";
-//         }
-//       });
-//       const urlParams = new URLSearchParams(window.location.search);
-//       const productId = urlParams.get("id");
-//       console.log(productId);
-
-//     fetch("db.json")
-//     .then(res=>res.json())
-//     .then(data=>{
-
-//       const selectedProduct = data.products.find(
-//         (product) => product.id === parseInt(productId)
-//       );
-//       if (selectedProduct) {
-//         console.log(selectedProduct);
-//         // Burada ürün detaylarını kullanarak sayfayı güncelleyebilirsiniz.
-//       } else {
-//         console.error("Ürün bulunamadı veya geçersiz ID.");
-//       }
-//     })
-
-
-// })
 
 window.addEventListener("DOMContentLoaded", function () {
 
@@ -70,9 +35,11 @@ window.addEventListener("DOMContentLoaded", function () {
             brand,
             price,
             oldPrice,
+            description
         } = selectedProduct;
         
         document.getElementById("product_type").textContent = brand;
+        document.getElementById("description").textContent = description;
         document.getElementById("product-title").textContent = title;
         document.getElementById("product-category").textContent = category;
         document.getElementById("product-image").src = img;

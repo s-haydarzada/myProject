@@ -48,15 +48,16 @@ window.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="follow">
                     <i class="fa-regular fa-heart follows"></i>
-                    <i class="fa-regular fa-eye follows" id="modal_icon"></i>
+                    <i class="fa-regular fa-eye follows" id="modal_icon"></i>   
                     <i class="fa-solid fa-code-compare"></i>
                 </div>
                     <div class="choose_color">
                         <h4>color:</h4>
-                        <select name="" id="">
-                            <option value="">White</option>
-                            <option value="">Black</option>
-                        </select>
+                        <select name="color" class="color-select">
+                        ${item.options.color.map(color => `
+                            <option value="${color}">${color}</option>
+                        `).join('')}
+                    </select>
                     </div>
                     <div class="price_buy">
                         <div class="prices">
@@ -74,7 +75,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
                 productContainer.innerHTML += html;
 
-              
+
                 if (document.readyState === "loading") {
                     document.addEventListener("DOMContentLoaded", start)
                 } else {
@@ -269,22 +270,32 @@ window.addEventListener("DOMContentLoaded", function () {
             window.onclick = function (event) {
                 if (event.target == document.getElementById("myModal")) {
                     closeModal();
+                    body.classList.remove("modal_open")
                 }
             }
 
             const modalIcons = document.querySelectorAll("#modal_icon");
-            const prodCarts = document.querySelectorAll(".product_cart");
-            
-            prodCarts.forEach((item)=>{
-                item.addEventListener("click",function(){
-                    const productId = this.dataset.id;
+            const prodCarts = document.querySelectorAll(".product_cart_image");
+            const closeModalButton = document.getElementById("close_modal");
+            const body = document.body;
+
+            prodCarts.forEach((item) => {
+                item.addEventListener("click", function () {
+                    const productId = this.parentElement.dataset.id;
                     window.location.href = `productDetails.html?id=${productId}`;
                 })
             })
-            
+            closeModalButton.addEventListener("click",function(){
+                body.classList.remove("modal_open");
+                closeModal();
+            })
+
+        
+
             modalIcons.forEach(product => {
                 product.addEventListener("click", function () {
-                    console.log("Salam")
+                    openModal();
+                    body.classList.add("modal_open");
                 });
             });
 
@@ -305,7 +316,7 @@ window.addEventListener("DOMContentLoaded", function () {
         </div>
         <div class="follow">
         <i class="fa-regular fa-heart follows"></i>
-        <i class="fa-regular fa-eye follows"></i>
+        <i class="fa-regular fa-eye follows" id="modal_icon"></i>
         <i class="fa-solid fa-code-compare"></i>
     </div>
         <div class="choose_color">
@@ -541,8 +552,49 @@ window.addEventListener("DOMContentLoaded", function () {
                             </div>`;
 
                     });
+                    
 
                 }
+                function openModal() {
+                    document.getElementById("myModal").style.display = "block";
+                }
+    
+                function closeModal() {
+                    document.getElementById("myModal").style.display = "none";
+                }
+    
+                window.onclick = function (event) {
+                    if (event.target == document.getElementById("myModal")) {
+                        closeModal();
+                        body.classList.remove("modal_open")
+                    }
+                }
+    
+                const modalIcons = document.querySelectorAll("#modal_icon");
+                const prodCarts = document.querySelectorAll(".product_cart_image");
+                const closeModalButton = document.getElementById("close_modal");
+                const body = document.body;
+    
+                prodCarts.forEach((item) => {
+                    item.addEventListener("click", function () {
+                        const productId = this.parentElement.dataset.id;
+                        window.location.href = `productDetails.html?id=${productId}`;
+                    })
+                })
+                closeModalButton.addEventListener("click",function(){
+                    body.classList.remove("modal_open");
+                    closeModal();
+                })
+    
+            
+    
+                modalIcons.forEach(product => {
+                    product.addEventListener("click", function () {
+                        openModal();
+                        body.classList.add("modal_open");
+                    });
+                });
+    
             })
 
 

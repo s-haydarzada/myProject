@@ -6,6 +6,7 @@
         "title": "Cloud Alpha Gaming Headset",
         "category":"gaming",
         "brand":"Electrobot",
+        "description":"ERGONOMICALLY DESIGNED FOR HARDCORE GAMING : From its unique contours and angled seat edges, to its fully adjustable recline, tilt, and height, the Dr Luxur...",
         "price": 500.99,
         "inStock": true,
         "options": {
@@ -23,6 +24,7 @@
         "img": "/src/images/gaming2.avif",
         "title": "VR Headset with Headphones",
         "category":"gaming",
+        "description":"Multiple connectivity options including HDMI, USB ports & RGB fans let you connect a variety of peripherals easily. Wi-Fi Ready – Connect to the internet...",
         "price": 399.99,
         "inStock": true,
         "options": {
@@ -41,6 +43,7 @@
         "img": "/src/images/gaming5.avif",
         "title": "Refurbished Xbox Series X 1TB Console",
         "category":"gaming",
+        "description":"Compatibility; Glass Screen Protector Compatible with Nintendo Switch. 9H Hardness; Tempered glass durability rated at 9H hardness to protect from everyday scratches. Case friendly; Made...",
         "inStock": false,
         "options": {
             "size": ["128GB", "256GB", "512GB"],
@@ -61,6 +64,7 @@
         "category":"speakers",
         "inStock": false,
         "brand":"HyperX",
+        "description":"HyperX Dual Chamber Drivers for more distinction and less distortion. Signature Award-Winning HyperX comfort. Durable aluminum frame with an expanded headband. Detachable braided cable with...",
         "options":{
             "size":["512GB"],
             "color": ["Blue", "White","Black"]
@@ -79,6 +83,7 @@
         "category":"speakers",
         "inStock": true,
         "brand":"HyperX",
+        "description":"Bring gaming worlds to life Feel your in-game actions and environment simulated through haptic feedback Experience varying force and tension at your fingertips with adaptive...",
         "options":{
             "size":["128GB","364GB","512GB"],
             "color": ["Blue"]
@@ -95,6 +100,7 @@
         "img": "/src/images/speaker12avif.avif",
         "title": "Hyper Clutch Gaming Controller",
         "category":"speakers",
+        "description":"Exceptional Full HD IPS 21.5 Inch Ultra Thin Display : Enjoy immaculate image quality with 1920x1080 resolution and 178 degree wide viewing angles I Zero...",
         "options":{
             "size":["512GB","256GB"],
             "color": ["White","Black"]
@@ -114,6 +120,7 @@
         "img": "/src/images/speaker3.avif",
         "title": "Cloud Alpha Gaming Headset",
         "category":"speakers",
+        "description":"ERGONOMICALLY DESIGNED FOR HARDCORE GAMING : From its unique contours and angled seat edges, to its fully adjustable recline, tilt, and height, the Dr Luxur...",
         "inStock": false,
         "options":{
             "size":["256GB","364GB","512GB"],
@@ -128,6 +135,7 @@
         "img": "/src/images/power1.avif",
         "title": "Raptor Gameing Z95",
         "category":"power",
+        "description":"Multiple connectivity options including HDMI, USB ports & RGB fans let you connect a variety of peripherals easily. Wi-Fi Ready – Connect to the internet...",
         "inStock": false,
         "options":{
             "size":["364GB"],
@@ -146,6 +154,7 @@
         "img": "/src/images/power2.avif",
         "title": "KD DMTR Gaming Desktop PC",
         "category":"power",
+        "description":"Compatibility; Glass Screen Protector Compatible with Nintendo Switch. 9H Hardness; Tempered glass durability rated at 9H hardness to protect from everyday scratches. Case friendly; Made...",
         "brand":" Sony PS5",
         "options":{
             "size":["256GB","512GB"],
@@ -164,6 +173,7 @@
         "img": "/src/images/power3.avif",
         "title": "Electrobot Xtreme Gaming Series PC",
         "category":"power",
+        "description":"Bring gaming worlds to life Feel your in-game actions and environment simulated through haptic feedback Experience varying force and tension at your fingertips with adaptive...",
         "brand":" Sony PS5",
         "options":{
             "size":["128GB","364GB"],
@@ -182,6 +192,7 @@
         "img": "/src/images/power3.avif",
         "title": "Raptor Gameing Z95",
         "category":"power",
+        "description":"ERGONOMICALLY DESIGNED FOR HARDCORE GAMING : From its unique contours and angled seat edges, to its fully adjustable recline, tilt, and height, the Dr Luxur...",
         "brand":" Sony PS5",
         "options":{
             "size":["256GB","364GB"],
@@ -196,6 +207,7 @@
         "img": "/src/images/power4.png",
         "title": "KD DMTR Gaming Desktop PC",
         "category":"power",
+        "description":"Bring gaming worlds to life Feel your in-game actions and environment simulated through haptic feedback Experience varying force and tension at your fingertips with adaptive...",
         "inStock": true,
         "brand":"Kepler Brooks",
         "options":{
@@ -214,6 +226,7 @@
         "img": "/src/images/power6.png",
         "title": "Electrobot Xtreme Gaming Series PC",
         "category":"power",
+        "description":"Multiple connectivity options including HDMI, USB ports & RGB fans let you connect a variety of peripherals easily. Wi-Fi Ready – Connect to the internet...",
         "inStock": true,
         "brand":"Kepler Brooks",
         "options":{
