@@ -31,6 +31,7 @@ window.addEventListener("DOMContentLoaded", function () {
         hiddenCart.classList.remove("active");
     })
 
+
     // 1.Show Products
 
     fetch("db.json")
@@ -48,7 +49,7 @@ window.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="follow">
                     <i class="fa-regular fa-heart follows"></i>
-                    <i class="fa-regular fa-eye follows" id="modal_icon"></i>   
+                    <i class="fa-regular fa-eye follows" id="modal_icon" data-id="${item.id}"></i>   
                     <i class="fa-solid fa-code-compare"></i>
                 </div>
                     <div class="choose_color">
@@ -74,6 +75,78 @@ window.addEventListener("DOMContentLoaded", function () {
                 </div>               `
 
                 productContainer.innerHTML += html;
+                const products = data.products;
+
+                function showProductDetails(productId) {
+                    const product = products.find(product => product.id == productId);
+                    const modalContent = document.querySelector(".modal-content");
+                    modalContent.innerHTML = `
+                    <div class="prod_detail">
+                    <div class="detail_left">
+                      <h2 id="product-title">${product.title}</h2>
+                      <article class="article" id="description">${product.description}</article>
+                      <div class="choose_color">
+                        <h4>color:</h4>
+                        <select name="" id="select_color">
+                          <option value="white">White</option>
+                          <option value="black">Black</option>
+                        </select>
+                      </div>
+                      <div class="price_buy">
+                        <div class="prices">
+                          <b id="product-price">${product.price}<span>USD</span></b>
+                          <s id="product-old_price">${product.oldPrice}<span>USD</span></s>
+                        </div>
+                        <div class="quantity">
+                          <h5>Quantity:</h5>
+                          <div class="quantity_input">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>1</span>
+                            <i class="fa-solid fa-plus"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="add_cart_btn">
+                      ${product.inStock ?
+                        `<button class="added_btn">Add to Cart</button>` :
+                        `<button class="added_btn desable" disabled>Out of Stock</button>`
+                    }
+                      </div>
+                    </div>
+                    <div class="detail_right">
+                      <div class="detail_image">
+                        <img src="${product.img}" alt="" id="product-image">
+                      </div>
+                    </div>
+                  </div> `;
+                }
+
+                const modalIcons = document.querySelectorAll("#modal_icon");
+                const prodCarts = document.querySelectorAll(".product_cart_image");
+                const closeModalButton = document.getElementById("close_modal");
+                const body = document.body;
+
+                prodCarts.forEach((item) => {
+                    item.addEventListener("click", function () {
+                        const productId = this.parentElement.dataset.id;
+                        window.location.href = `productDetails.html?id=${productId}`;
+                    })
+                })
+
+                closeModalButton.addEventListener("click", function () {
+                    body.classList.remove("modal_open");
+                    closeModal();
+                })
+
+
+                modalIcons.forEach(product => {
+                    product.addEventListener("click", function () {
+                        body.classList.add("modal_open");
+                        const productId = product.getAttribute('data-id');
+                        showProductDetails(productId);
+                        openModal();
+                    });
+                });
 
 
                 if (document.readyState === "loading") {
@@ -274,30 +347,8 @@ window.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
-            const modalIcons = document.querySelectorAll("#modal_icon");
-            const prodCarts = document.querySelectorAll(".product_cart_image");
-            const closeModalButton = document.getElementById("close_modal");
-            const body = document.body;
 
-            prodCarts.forEach((item) => {
-                item.addEventListener("click", function () {
-                    const productId = this.parentElement.dataset.id;
-                    window.location.href = `productDetails.html?id=${productId}`;
-                })
-            })
-            closeModalButton.addEventListener("click",function(){
-                body.classList.remove("modal_open");
-                closeModal();
-            })
 
-        
-
-            modalIcons.forEach(product => {
-                product.addEventListener("click", function () {
-                    openModal();
-                    body.classList.add("modal_open");
-                });
-            });
 
         })
     // 3.Filter in categories section
@@ -552,49 +603,49 @@ window.addEventListener("DOMContentLoaded", function () {
                             </div>`;
 
                     });
-                    
+
 
                 }
                 function openModal() {
                     document.getElementById("myModal").style.display = "block";
                 }
-    
+
                 function closeModal() {
                     document.getElementById("myModal").style.display = "none";
                 }
-    
+
                 window.onclick = function (event) {
                     if (event.target == document.getElementById("myModal")) {
                         closeModal();
                         body.classList.remove("modal_open")
                     }
                 }
-    
+
                 const modalIcons = document.querySelectorAll("#modal_icon");
                 const prodCarts = document.querySelectorAll(".product_cart_image");
                 const closeModalButton = document.getElementById("close_modal");
                 const body = document.body;
-    
+
                 prodCarts.forEach((item) => {
                     item.addEventListener("click", function () {
                         const productId = this.parentElement.dataset.id;
                         window.location.href = `productDetails.html?id=${productId}`;
                     })
                 })
-                closeModalButton.addEventListener("click",function(){
+                closeModalButton.addEventListener("click", function () {
                     body.classList.remove("modal_open");
                     closeModal();
                 })
-    
-            
-    
+
+
+
                 modalIcons.forEach(product => {
                     product.addEventListener("click", function () {
                         openModal();
                         body.classList.add("modal_open");
                     });
                 });
-    
+
             })
 
 

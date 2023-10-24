@@ -16,8 +16,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get("id");
-  console.log(productId)
-
 
 
   if (productId !== null) {
@@ -25,7 +23,6 @@ window.addEventListener("DOMContentLoaded", function () {
       .then(res => res.json())
       .then(data => {
         const selectedProduct = data.products.find(product => product.id === parseInt(productId));
-        console.log(selectedProduct.options.color);
 
         if (selectedProduct) {
           const {
@@ -54,20 +51,14 @@ window.addEventListener("DOMContentLoaded", function () {
           option.textContent = color;
           selectColor.appendChild(option);
       });
-      
-      
-      
-      
-      
-      
-
+    
         } else {
-          console.error("Ürün bulunamadı veya geçersiz ID.");
+          console.error("Product tapilmadi ve ya sehv ID");
         }
       })
      
   } else {
-    console.error("Ürün ID'si belirtilmemiş.");
+    console.error("product tapilmadi");
   }
 
 });
