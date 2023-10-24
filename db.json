@@ -62,7 +62,7 @@
         "img": "/src/images/klaviatura.avif",
         "title": "Rubber Keycaps",
         "category":"speakers",
-        "inStock": false,
+        "inStock": true,
         "brand":"HyperX",
         "description":"HyperX Dual Chamber Drivers for more distinction and less distortion. Signature Award-Winning HyperX comfort. Durable aluminum frame with an expanded headband. Detachable braided cable with...",
         "options":{
@@ -105,7 +105,7 @@
             "size":["512GB","256GB"],
             "color": ["White","Black"]
         },
-        "inStock": true,
+        "inStock": false,
         "brand":" Samsung",
         "sizePrices": {
             "364": 667.99,

@@ -1262,7 +1262,7 @@ body {
 #main .categories .categories_container .categories_top .right .right_container .product_cart .price_buy .add_cart_btn .desable {
   cursor: not-allowed !important;
 }
-#main .categories .categories_container .categories_top .right .right_container .product_cart .price_buy .add_cart_btn .add_btn {
+#main .categories .categories_container .categories_top .right .right_container .product_cart .price_buy .add_cart_btn .added_btn {
   padding: 10px 20px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -1273,7 +1273,7 @@ body {
   border: 1px solid gray;
   transition: 1s;
 }
-#main .categories .categories_container .categories_top .right .right_container .product_cart .price_buy .add_cart_btn .add_btn:hover {
+#main .categories .categories_container .categories_top .right .right_container .product_cart .price_buy .add_cart_btn .added_btn:hover {
   background: white;
   color: gray;
 }
